@@ -4,5 +4,5 @@ An extensive OOP project, with the goal of creating a software for manipulating 
 
 
 -----------------------------------
-### do you have some comments, negative or positive review? I would like to hear you: shirawein70@gmail.com
+do you have some comments, negative or positive review? I would like to hear you: shirawein70@gmail.com
 
