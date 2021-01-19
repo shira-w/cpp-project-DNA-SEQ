@@ -137,10 +137,12 @@ inline std::ostream& operator<<(std::ostream& os, DnaSequence::Nucleotid& nuc)
 
 inline bool operator ==(const DnaSequence& dna1,const DnaSequence& dna2)
 {
-	if (strcmp(dna1.getCopyNucs(),dna2.getCopyNucs())==0)
-		return true;
-	else
-		return false;
+	char* dna1NucsCopy = dna1.getCopyNucs();
+	char* dna2NucsCopy = dna2.getCopyNucs();
+	const bool identical = (strcmp(dna1NucsCopy,dna2NucsCopy)==0);
+	delete dna1NucsCopy;
+	delete dna2NucsCopy;
+        return identical;
 }
 
 inline bool operator !=(const DnaSequence& dna1, const DnaSequence& dna2)
